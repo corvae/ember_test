@@ -1,10 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
+<h1 id="title">Welcome to Ember</h1>
 
-<ul>
-<li>Templates</li>
-<li>Components/Controllers</li>
-<li>Models</li>
-<li>Routes</li>
-</ul>
+{{#link-to "index"}}Home{{/link-to}}
+
+<nav>
+    {{#link-to "about"}}About{{/link-to}}
+    {{#link-to "posts"}}Posts{{/link-to}}
+    {{#link-to "favorites"}}Favorites{{/link-to}}
+</nav>
 
 {{outlet}}

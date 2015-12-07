@@ -1,0 +1,15 @@
+<h1>Playlist</h1>
+<!-- specify both models and use the #each helper to display each record in the song model and album model -->
+<ul>
+  {{#each model.songs as |song|}}
+    <li>{{song.name}} by {{song.artist}}</li>
+  {{/each}}
+</ul>
+
+<h1>Albums</h1>
+
+<ul>
+  {{#each model.albums as |album|}}
+    <li>{{album.title}} by {{album.artist}}</li>
+  {{/each}}
+</ul>
